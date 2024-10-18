@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório de Custos</title>
+    <link rel="stylesheet" href="css/RelatorioCustos.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <h2>Gerencia Máxima</h2>
+        <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="GerenAtivos.html">Cadastro e Gerenciamento</a></li>
+            <li><a href="RelatorioCustos.html">Relatório de Custos</a></li>
+            <li><a href="AlertasNotifi.html" class="active">Alertas e Notificações</a></li>
+            <li><a href="Rastreamento.html" class="active">Rastreamento</a></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <section>
+            <h1>Relatório de Custos</h1>
+            <form id="cost-report-form">
+                <label for="start-date">Data de Início:</label>
+                <input type="date" id="start-date" name="start-date" required>
+
+                <label for="end-date">Data de Fim:</label>
+                <input type="date" id="end-date" name="end-date" required>
+
+                <button type="submit">Gerar Relatório</button>
+            </form>
+        </section>
+
+        <section>
+            <h1>Custos por Departamento</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Departamento</th>
+                        <th>Custo Total</th>
+                        <th>Data do Relatório</th>
+                    </tr>
+                </thead>
+                <tbody id="cost-report-table-body">
+                    <!-- Linhas dinâmicas serão inseridas aqui -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="js/relatorioCustos.js"></script>
+</body>
+</html>

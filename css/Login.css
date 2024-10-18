@@ -1,0 +1,59 @@
+/* Estilos globais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../imagens/UnileverLogindodle.jpg'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir toda a área */
+    background-position: center; /* Centraliza a imagem */
+    height: 100vh; /* Altura da tela inteira */
+    display: flex; /* Usar Flexbox para centralizar o conteúdo */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+}
+
+/* Estilos do contêiner do formulário */
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Cor de fundo do formulário com transparência */
+    padding: 20px; /* Espaçamento interno do formulário */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave ao redor do formulário */
+    width: 300px; /* Largura do formulário */
+}
+
+/* Estilos para os rótulos dos campos do formulário */
+.form-container label {
+    margin-top: 10px; /* Espaço acima do rótulo */
+    font-weight: bold; /* Rótulo em negrito */
+}
+
+/* Estilos para os campos de entrada do formulário */
+.form-container input {
+    width: 94%; /* Largura total do campo de entrada */
+    padding: 10px; /* Espaçamento interno do campo de entrada */
+    margin-top: 5px; /* Espaço acima do campo de entrada */
+    border: 1px solid #004d99; /* Borda azul suave */
+    border-radius: 4px; /* Cantos arredondados dos campos de entrada */
+}
+
+/* Estilos para os botões do formulário */
+.form-container button {
+    margin-top: 15px; /* Espaço acima do botão */
+    background-color: #004d99; /* Cor de fundo azul Unilever */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    padding: 10px; /* Espaçamento interno do botão */
+    border-radius: 8px; /* Cantos arredondados do botão */
+    cursor: pointer; /* Cursor em forma de mão ao passar o mouse */
+    width: 100%; /* Botão ocupa toda a largura do formulário */
+}
+
+/* Estilos para o botão ao passar o mouse */
+.form-container button:hover {
+    background-color: #0073e6; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilos para a mensagem de erro */
+.error-message {
+    color: red; /* Cor da mensagem de erro */
+    margin-top: 10px; /* Espaço acima da mensagem de erro */
+}

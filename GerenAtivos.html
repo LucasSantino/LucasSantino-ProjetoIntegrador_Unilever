@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Gerenciamento de Ativos</title>
+    <link rel="stylesheet" href="css/GerenAtivos.css">
+</head>
+<body>
+    <nav class="sidebar">
+        <h2>Gerencia Máxima</h2>
+        <ul>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="GerenAtivos.html">Cadastro e Gerenciamento</a></li>
+            <li><a href="RelatorioCustos.html">Relatório de Custos</a></li>
+            <li><a href="AlertasNotifi.html" class="active">Alertas e Notificações</a></li>
+            <li><a href="Rastreamento.html" class="active">Rastreamento</a></li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        <section>
+            <h1>Cadastro de Ativos</h1>
+            <form id="asset-form">
+                <label for="asset-id">ID do Ativo:</label>
+                <input type="text" id="asset-id" name="asset-id" required><br><br>
+
+                <label for="asset-name">Nome do Ativo:</label>
+                <input type="text" id="asset-name" name="asset-name" required><br><br>
+
+                <label for="category">Categoria:</label>
+                <input type="text" id="category" name="category" required><br><br>
+
+                <label for="status">Status:</label>
+                <select id="status" name="status">
+                    <option value="ativo">Ativo</option>
+                    <option value="inativo">Inativo</option>
+                </select><br><br>
+
+                <button type="submit">Cadastrar Ativo</button>
+            </form>
+        </section>
+
+        <section>
+            <h1>Gerenciamento de Ativos</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Categoria</th>
+                        <th>Status</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="asset-table-body">
+                    <!-- Linhas dinâmicas serão inseridas aqui -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="js/GerenAtivos.js"></script>
+</body>
+</html>
