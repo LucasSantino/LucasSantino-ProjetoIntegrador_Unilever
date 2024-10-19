@@ -22,6 +22,12 @@ body {
     height: 100%;
 }
 
+.linha-horizontal {
+    width: 150px; /* Largura da linha horizontal */
+    height: 1px; /* Altura da linha (muito fina) */
+    background-color: #f5f5f5; /* Cor da linha */
+    border: none; /* Remove bordas padrão */
+}
 
 .sidebar h2 {
     margin-bottom: 40px;
