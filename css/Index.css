@@ -1,67 +1,73 @@
 /* Estilos globais */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    display: flex;
-    height: 100vh;
+    margin: 0; /* Remove a margem padrão do body */
+    font-family: Arial, sans-serif; /* Define a fonte do texto */
+    background-color: #f5f5f5; /* Cor de fundo da página */
+    display: flex; /* Utiliza flexbox para layout */
+    height: 100vh; /* Define a altura da página como 100% da altura da viewport */
 }
 
 /* Barra de Navegação Lateral */
 .sidebar {
-    width: 200px; 
-    background-color: #004d99;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
+    width: 200px; /* Largura da barra lateral */
+    background-color: #004d99; /* Cor de fundo da barra lateral */
+    color: white; /* Cor do texto na barra lateral */
+    display: flex; /* Utiliza flexbox para disposição dos itens */
+    flex-direction: column; /* Alinha os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    padding: 20px; /* Espaçamento interno da barra lateral */
+    position: fixed; /* Mantém a barra fixa na tela */
+    top: 0; /* Posiciona no topo */
+    left: 0; /* Posiciona à esquerda */
+    height: 100%; /* Altura total da barra lateral */
 }
 
+.linha-horizontal {
+    width: 150px; /* Largura da linha horizontal */
+    height: 1px; /* Altura da linha (muito fina) */
+    background-color: #f5f5f5; /* Cor da linha */
+    border: none; /* Remove bordas padrão */
+}
 
 .sidebar h2 {
-    margin-bottom: 40px;
+    margin-bottom: 40px; /* Espaçamento abaixo do título */
 }
 
 .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-    width: 100%;
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove espaçamento padrão */
+    width: 100%; /* Largura total da lista */
 }
 
 .sidebar ul li {
-    margin: 20px 0;
+    margin: 20px 0; /* Espaçamento vertical entre os itens da lista */
 }
 
 .sidebar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    padding: 10px;
-    text-align: center;
-    border-radius: 8px;
+    color: white; /* Cor do texto do link */
+    text-decoration: none; /* Remove sublinhado do link */
+    font-size: 18px; /* Tamanho da fonte do link */
+    display: block; /* Faz o link ocupar toda a área do item da lista */
+    padding: 10px; /* Espaçamento interno do link */
+    text-align: center; /* Centraliza o texto do link */
+    border-radius: 8px; /* Bordas arredondadas do link */
 }
 
 .sidebar ul li a:hover {
-    background-color: #0073e6;
+    background-color: #0073e6; /* Cor de fundo ao passar o mouse sobre o link */
 }
 
 /* Conteúdo principal */
 .main-content {
-    margin-left: 250px; /* Espaço para a barra lateral */
-    padding: 20px;
-    flex-grow: 1;
+    margin-left: 250px; /* Espaço à esquerda para a barra lateral */
+    padding: 20px; /* Espaçamento interno do conteúdo */
+    flex-grow: 1; /* Faz o conteúdo principal ocupar o espaço restante */
 }
 
 section {
-    margin-bottom: 40px;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px; /* Espaçamento abaixo das seções */
+    background-color: white; /* Cor de fundo das seções */
+    padding: 20px; /* Espaçamento interno das seções */
+    border-radius: 8px; /* Bordas arredondadas das seções */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para as seções */
 }
