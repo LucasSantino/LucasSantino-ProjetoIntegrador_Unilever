@@ -10,6 +10,12 @@
     <div class="form-container">
         <h2>Login</h2>
         <form>
+            <label for="user-type">Tipo de Usuário:</label>
+            <select id="user-type" name="user-type" required>
+                <option value="user">Usuário</option>
+                <option value="admin">Administrador</option>
+            </select>
+            
             <label for="username">Usuário:</label>
             <input type="text" id="username" name="username" required>
             
@@ -21,5 +27,6 @@
         <p class="error-message"></p> <!-- Espaço para mensagens de erro -->
         <p>Não tem uma conta? <a href="LoginCadastro.html">Cadastre-se aqui</a>.</p>
     </div>
+    <script src="js/login.js"></script> 
 </body>
 </html>
