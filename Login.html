@@ -8,24 +8,20 @@
 </head>
 <body>
     <div class="form-container">
-        <h2>Login</h2>
+        <h2>Seja Bem vindo!</h2>
         <form>
-            <label for="user-type">Tipo de Usuário:</label>
+            <label for="user-type">Entrar como:</label>
             <select id="user-type" name="user-type" required>
                 <option value="user">Usuário</option>
                 <option value="admin">Administrador</option>
             </select>
-            
             <label for="username">Usuário:</label>
             <input type="text" id="username" name="username" required>
-            
             <label for="password">Senha:</label>
             <input type="password" id="password" name="password" required>
-            
             <button type="submit">Entrar</button>
         </form>
         <p class="error-message"></p> <!-- Espaço para mensagens de erro -->
-        <p>Não tem uma conta? <a href="LoginCadastro.html">Cadastre-se aqui</a>.</p>
     </div>
     <script src="js/login.js"></script> 
 </body>
